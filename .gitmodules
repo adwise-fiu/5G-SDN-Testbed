@@ -1,1 +1,3 @@
-test
+[submodule "Open5Gs"]
+	path = Open5Gs/Open5Gs
+	url = https://github.com/open5gs/open5gs
