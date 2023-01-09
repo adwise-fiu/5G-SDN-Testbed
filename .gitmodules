@@ -9,4 +9,3 @@
 [submodule "OpenvSwitch"]
 	path = OpenvSwitch/OpenvSwitch
 	url = https://github.com/openvswitch/ovs
-	
