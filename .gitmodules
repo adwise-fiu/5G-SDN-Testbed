@@ -1,3 +1,7 @@
 [submodule "libOpen5Gs"]
 	path = Open5Gs/Open5Gs
 	url = https://github.com/open5gs/open5gs
+	
+[submodule "awesomelibrary"]
+ path = awesomelibrary
+ url = https://bitbucket.org/jaredw/awesomelibrary
