@@ -1,7 +1,12 @@
-[submodule "libOpen5Gs"]
+[submodule "Open5Gs"]
 	path = Open5Gs/Open5Gs
 	url = https://github.com/open5gs/open5gs
+
+[submodule "UERANSIM"]
+	path = UERANSIM/UERANSIM
+	url = https://github.com/aligungr/UERANSIM
 	
-[submodule "awesomelibrary"]
- path = awesomelibrary
- url = https://bitbucket.org/jaredw/awesomelibrary
+[submodule "OpenvSwitch"]
+	path = OpenvSwitch/OpenvSwitch
+	url = https://github.com/openvswitch/ovs
+	
