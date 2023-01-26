@@ -1,6 +1,6 @@
 ## Acknowledgments ##
 
-The initial version of this 5G-SDN testbed demo was possible by merging open-source projects: 
+This version of 5G-SDN testbed demo was possible by merging open-source projects: 
 
 - [OpenvSwitch](https://github.com/openvswitch/ovs "OpenvSwitch")
 
