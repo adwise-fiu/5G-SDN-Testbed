@@ -28,6 +28,6 @@ sudo apt update
 sudo apt install mongodb-clients -y
 
  curl -fsSL https://open5gs.org/open5gs/assets/webui/install | sudo -E bash -
-![image](https://user-images.githubusercontent.com/86670148/215343717-2cb5d565-7a1f-4cd5-81b4-48b7117a7050.png)
+
 
 ```
