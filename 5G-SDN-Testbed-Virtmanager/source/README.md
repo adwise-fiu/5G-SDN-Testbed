@@ -460,9 +460,9 @@ Password : 1423
 
 You can change the password after login 
 
-<p align="center">
- ![alt text](https://github.com/adwise-fiu/5G-SDN-Testbed/tree/main/5G-SDN-Testbed-Virtmanager/figures/login.png)
-</p>
+
+![alt text](https://github.com/adwise-fiu/5G-SDN-Testbed/tree/main/5G-SDN-Testbed-Virtmanager/figures/login.png)
+
 
 
 
