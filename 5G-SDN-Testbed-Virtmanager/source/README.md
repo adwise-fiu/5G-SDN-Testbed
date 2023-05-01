@@ -461,7 +461,7 @@ Password : 1423
 You can change the password after login 
 
 <p align="center">
-  <img src="https://github.com/adwise-fiu/5G-SDN-Testbed/tree/main/5G-SDN-Testbed-Virtmanager/figures/login.png" alt="Image description">
+ ![alt text](https://github.com/adwise-fiu/5G-SDN-Testbed/tree/main/5G-SDN-Testbed-Virtmanager/figures/login.png)
 </p>
 
 
@@ -479,7 +479,7 @@ You can change the password after login
 </p>
 
 <p align="center">
-  <img src="https://github.com/adwise-fiu/5G-SDN-Testbed/tree/main/5G-SDN-Testbed-Virtmanager/figures/createsubscriber2.png.png" alt="Image description">
+  <img src="https://github.com/adwise-fiu/5G-SDN-Testbed/tree/main/5G-SDN-Testbed-Virtmanager/figures/createsubscriber2.png" alt="Image description">
 </p>
 
 
