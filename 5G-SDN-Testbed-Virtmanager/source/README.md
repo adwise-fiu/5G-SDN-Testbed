@@ -476,7 +476,7 @@ You can change the password after login
 </p>
 
 <p align="center">
-  <img src="figures/createsubscriber2.png.png" alt="Image description">
+  <img src="figures/createsubscriber2.png" alt="Image description">
 </p>
 
 
