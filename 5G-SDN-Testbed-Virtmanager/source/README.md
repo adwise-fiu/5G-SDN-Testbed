@@ -460,31 +460,31 @@ Password : 1423
 
 You can change the password after login 
 
-
-![alt text](https://github.com/adwise-fiu/5G-SDN-Testbed/tree/main/5G-SDN-Testbed-Virtmanager/figures/login.png)
-
-
-
-
 <p align="center">
-  <img src="[https://github.com/adwise-fiu/5G-SDN-Testbed/tree/main/5G-SDN-Testbed-Virtmanager/figures](https://github.com/adwise-fiu/5G-SDN-Testbed/tree/main/5G-SDN-Testbed-Virtmanager/figures/)/home.png" alt="Image description">
-</p>
-
-<p align="center">
-  <img src="https://github.com/adwise-fiu/5G-SDN-Testbed/tree/main/5G-SDN-Testbed-Virtmanager/figures/home.png" alt="Image description">
-</p>
-
-<p align="center">
-  <img src="https://github.com/adwise-fiu/5G-SDN-Testbed/tree/main/5G-SDN-Testbed-Virtmanager/figures/createsubscriber.png" alt="Image description">
-</p>
-
-<p align="center">
-  <img src="https://github.com/adwise-fiu/5G-SDN-Testbed/tree/main/5G-SDN-Testbed-Virtmanager/figures/createsubscriber2.png" alt="Image description">
+  <img src="figures/login.png" alt="Image description">
 </p>
 
 
+
 <p align="center">
-  <img src="https://github.com/adwise-fiu/5G-SDN-Testbed/tree/main/5G-SDN-Testbed-Virtmanager/figures/subscriberlist.png" alt="Image description">
+  <img src="figures/home.png" alt="Image description">
+</p>
+
+<p align="center">
+  <img src="figures/home.png" alt="Image description">
+</p>
+
+<p align="center">
+  <img src="figures/createsubscriber.png" alt="Image description">
+</p>
+
+<p align="center">
+  <img src="figures/createsubscriber2.png.png" alt="Image description">
+</p>
+
+
+<p align="center">
+  <img src="figures/subscriberlist.png" alt="Image description">
 </p>
 
 
