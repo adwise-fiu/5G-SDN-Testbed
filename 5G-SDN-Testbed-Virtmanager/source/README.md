@@ -461,7 +461,7 @@ Password : 1423
 You can change the password after login 
 
 <p align="center">
-  <img src="../figures/login.png" alt="Image description">
+  <img src="https://github.com/adwise-fiu/5G-SDN-Testbed/tree/main/5G-SDN-Testbed-Virtmanager/figures/login.png" alt="Image description">
 </p>
 
 
