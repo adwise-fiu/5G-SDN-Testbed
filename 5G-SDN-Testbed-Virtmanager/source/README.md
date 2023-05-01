@@ -470,9 +470,6 @@ You can change the password after login
   <img src="figures/home.png" alt="Image description">
 </p>
 
-<p align="center">
-  <img src="figures/home.png" alt="Image description">
-</p>
 
 <p align="center">
   <img src="figures/createsubscriber.png" alt="Image description">
