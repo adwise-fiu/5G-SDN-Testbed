@@ -344,14 +344,14 @@ upf:
 * Restart the UPF service
 
 ```bash
-sudo systemctl restart open5gs-upf.service
+sudo systemctl restart open5gs-upfd.service
 ```
 
 * Check that the upf service is running properly
 
 
 ```bash
-sudo systemctl status open5gs-upf.service
+sudo systemctl status open5gs-upfd.service
 ```
 
 * Allow UE network traffic to access the internet. 
