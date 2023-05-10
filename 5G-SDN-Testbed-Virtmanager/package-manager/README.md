@@ -41,150 +41,6 @@ sudo ovs-vsctl add-port br0 gnb -- set Interface gnb type=internal
 
 
 
-
-
-
-# Open5GS - UP 
-
-
-
-```bash
-sudo apt update and sudo apt upgrade -y 
-sudo apt install openssh-server -y 
-```
-
-**Remember to make a snapshot**
-
-## Getting MongoDB
-
-* Import the public key used by the package management system.
-
-```bash
-sudo apt update
-sudo apt install wget gnupg -y
-wget -qO - https://www.mongodb.org/static/pgp/server-6.0.asc | sudo apt-key add -
-
-```
-
-* Create the list file /etc/apt/sources.list.d/mongodb-org-6.0.list for your version of Ubuntu.
-
-```bash
-echo "deb [ arch=amd64,arm64 ] https://repo.mongodb.org/apt/ubuntu focal/mongodb-org/6.0 multiverse" | sudo tee /etc/apt/sources.list.d/mongodb-org-6.0.list
-
-```
-
-* Install the MongoDB packages.
-
-```bash
-sudo apt update 
-sudo apt install -y mongodb-org
-sudo systemctl start mongod
-sudo systemctl enable mongod
-```
-
-
-## Getting Open5GS
-
-* Ubuntu makes it easy to install Open5GS as shown below.
-
-```bash 
-sudo add-apt-repository ppa:open5gs/latest
-sudo apt update
-sudo apt install open5gs -y
-```
-
-
-* Modify the config files for UPF. This is only for the User Plane
-
-```bash
-cd install/etc/open5gs
-```
-
-
-```bash
-sudo nano upf.yaml
-```
-
-```diff
-upf:
-    pfcp:
--      - addr: 127.0.0.7
-+      - addr: 192.168.233.4
-    gtpu:
--      - addr: 127.0.0.7
-+      - addr: 192.168.233.4
-    subnet:
-      - addr: 10.45.0.1/16
-      - addr: 2001:db8:cafe::1/48
-    metrics:
-      - addr: 127.0.0.7
-        port: 9090
-```
-
-
-* Restart the UPF service
-
-```bash
-sudo systemctl restart open5gs-upf.service
-```
-
-* Check that the upf service is running properly
-
-
-```bash
-sudo systemctl status open5gs-upf.service
-```
-
-* Allow UE network traffic to access the internet. 
-
-```bash
-sudo sysctl -w net.ipv4.ip_forward=1
-sudo iptables -t nat -A POSTROUTING -s 10.45.0.0/16 ! -o ogstun -j MASQUERADE
-```
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 # Open5GS - CP 
 
 ## Getting MongoDB
@@ -405,6 +261,169 @@ You can change the password after login
 <p align="center">
   <img src="figures/subscriberlist.png" alt="Image description">
 </p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# Open5GS - UP 
+
+
+
+```bash
+sudo apt update and sudo apt upgrade -y 
+sudo apt install openssh-server -y 
+```
+
+**Remember to make a snapshot**
+
+## Getting MongoDB
+
+* Import the public key used by the package management system.
+
+```bash
+sudo apt update
+sudo apt install wget gnupg -y
+wget -qO - https://www.mongodb.org/static/pgp/server-6.0.asc | sudo apt-key add -
+
+```
+
+* Create the list file /etc/apt/sources.list.d/mongodb-org-6.0.list for your version of Ubuntu.
+
+```bash
+echo "deb [ arch=amd64,arm64 ] https://repo.mongodb.org/apt/ubuntu focal/mongodb-org/6.0 multiverse" | sudo tee /etc/apt/sources.list.d/mongodb-org-6.0.list
+
+```
+
+* Install the MongoDB packages.
+
+```bash
+sudo apt update 
+sudo apt install -y mongodb-org
+sudo systemctl start mongod
+sudo systemctl enable mongod
+```
+
+
+## Getting Open5GS
+
+* Ubuntu makes it easy to install Open5GS as shown below.
+
+```bash 
+sudo add-apt-repository ppa:open5gs/latest
+sudo apt update
+sudo apt install open5gs -y
+```
+
+
+* Modify the config files for UPF. This is only for the User Plane
+
+```bash
+cd install/etc/open5gs
+```
+
+
+```bash
+sudo nano upf.yaml
+```
+
+```diff
+upf:
+    pfcp:
+-      - addr: 127.0.0.7
++      - addr: 192.168.233.4
+    gtpu:
+-      - addr: 127.0.0.7
++      - addr: 192.168.233.4
+    subnet:
+      - addr: 10.45.0.1/16
+      - addr: 2001:db8:cafe::1/48
+    metrics:
+      - addr: 127.0.0.7
+        port: 9090
+```
+
+
+* Restart the UPF service
+
+```bash
+sudo systemctl restart open5gs-upf.service
+```
+
+* Check that the upf service is running properly
+
+
+```bash
+sudo systemctl status open5gs-upf.service
+```
+
+* Allow UE network traffic to access the internet. 
+
+```bash
+sudo sysctl -w net.ipv4.ip_forward=1
+sudo iptables -t nat -A POSTROUTING -s 10.45.0.0/16 ! -o ogstun -j MASQUERADE
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
