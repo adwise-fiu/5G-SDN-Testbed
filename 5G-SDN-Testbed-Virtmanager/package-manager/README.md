@@ -301,33 +301,6 @@ sudo apt install openssh-server -y
 
 **Remember to make a snapshot**
 
-## Getting MongoDB
-
-* Import the public key used by the package management system.
-
-```bash
-sudo apt update
-sudo apt install wget gnupg -y
-wget -qO - https://www.mongodb.org/static/pgp/server-6.0.asc | sudo apt-key add -
-
-```
-
-* Create the list file /etc/apt/sources.list.d/mongodb-org-6.0.list for your version of Ubuntu.
-
-```bash
-echo "deb [ arch=amd64,arm64 ] https://repo.mongodb.org/apt/ubuntu focal/mongodb-org/6.0 multiverse" | sudo tee /etc/apt/sources.list.d/mongodb-org-6.0.list
-
-```
-
-* Install the MongoDB packages.
-
-```bash
-sudo apt update 
-sudo apt install -y mongodb-org
-sudo systemctl start mongod
-sudo systemctl enable mongod
-```
-
 
 ## Getting Open5GS
 
