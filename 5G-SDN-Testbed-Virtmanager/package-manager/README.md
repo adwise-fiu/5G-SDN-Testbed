@@ -316,7 +316,7 @@ sudo apt install open5gs -y
 * Modify the config files for UPF. This is only for the User Plane
 
 ```bash
-cd install/etc/open5gs
+cd /etc/open5gs
 ```
 
 
