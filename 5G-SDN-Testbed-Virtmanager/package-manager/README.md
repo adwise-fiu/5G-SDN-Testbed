@@ -84,7 +84,7 @@ sudo apt install open5gs -y
 * Modify the config files for AMF and SMF. This is only for the control Plane
 
 ```bash
-cd install/etc/open5gs
+cd /etc/open5gs
 ```
 
 
@@ -208,7 +208,11 @@ sudo systemctl status open5gs-smf.service
 
 ## Building the WebUI of Open5GS
 
-Node.js is required to build WebUI of Open5GS
+The WebUI allows you to interactively edit subscriber data. While it is not essential to use this, it makes things easier when you are just starting out on your Open5GS adventure. (A command line tool is available for advanced users).
+
+Node.js is required to install the WebUI of Open5GS
+
+Debian and Ubuntu based Linux distributions can install Node.js as follows:
 
 ```bash
 sudo apt install curl -y
@@ -216,18 +220,13 @@ curl -fsSL https://deb.nodesource.com/setup_18.x | sudo -E bash -
 sudo apt install nodejs
 ```
 
-* Install the dependencies to run WebUI
+* You can now install WebUI of Open5GS.
 
 ```bash
-cd webui
-npm ci
+curl -fsSL https://open5gs.org/open5gs/assets/webui/install | sudo -E bash -
 ```
 
-* The WebUI runs as an npm script.
 
-```bash
-npm run dev &
-```
 
 ## Register Subscriber Information
 
