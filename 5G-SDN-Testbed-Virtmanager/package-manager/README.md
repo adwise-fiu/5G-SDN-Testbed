@@ -30,13 +30,49 @@ sudo ovs-vsctl add-port br0 gnb -- set Interface gnb type=internal
 
 
 
+# Opendaylight 
 
 
 
+#### Install Opendaylight 
+
+```bash
+sudo apt-get -y update
+sudo apt-get -y upgrade
+sudo apt-get -y install unzip
+sudo apt-get -y install openjdk-8-jre
+sudo update-alternatives --config java
+ls -l /etc/alternatives/java
+echo 'export JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64/jre' >> ~/.bashrc
+source ~/.bashrc
+echo $JAVA_HOME
+sudo apt install curl -y 
+curl -XGET -O https://nexus.opendaylight.org/content/repositories/opendaylight.release/org/opendaylight/integration/karaf/0.8.4/karaf-0.8.4.zip
+unzip karaf-0.8.4.zip
+cd karaf-0.8.4/
+./bin/karaf clean 
+
+```
+
+```bash 
+opendaylight-user@root>feature:install odl-restconf  odl-mdsal-apidocs odl-dlux-core
+```
+
+**Connect to UI**
+Connect to http://<IP>:8181/index.html#/login, using the credentials of admin/admin.
+    
+    
+    
 
 
+**Set the external SDN controller**
 
-
+```bash
+sudo ovs-vsctl set-controller br0 tcp:$HOSTIP:6633
+sudo ovs-vsctl set bridge br0 protocols=OpenFlow13
+sudo ovs-ofctl add-flow br0 -O OpenFlow13 "table=0,priority=100,actions=normal"
+sudo ovs-ofctl -O OpenFlow13 dump-flows br0
+```
 
 
 
