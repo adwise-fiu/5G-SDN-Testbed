@@ -223,19 +223,20 @@ upf:
 
 
 
-* Restart the AMF and SMF service
+* 
+    the AMF and SMF service
 
 ```bash
-sudo systemctl restart open5gs-amf.service
-sudo systemctl restart open5gs-smf.service
+sudo systemctl restart open5gs-amfd.service
+sudo systemctl restart open5gs-smfd.service
 ```
 
 * Check that the AMF and SMF service is running properly
 
 
 ```bash
-sudo systemctl status open5gs-amf.service
-sudo systemctl status open5gs-smf.service
+sudo systemctl status open5gs-amfd.service
+sudo systemctl status open5gs-smfd.service
 ```
 
 
